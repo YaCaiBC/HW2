@@ -1,5 +1,113 @@
  body {
-    margin: 50px;
-    font-family: Helvetica, sans-serif;
-    font-size: 150%;
-}
+     margin: 50px;
+     font-family: Helvetica, sans-serif;
+     font-size: 150%;
+     background-color: #ef9e9e
+ }
+
+
+ #container {
+     /* main 3x3 grid for layout */
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto;
+ }
+
+ h2 {
+     /* h2 location on main grid */
+     grid-column: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     justify-self: center;
+     color: #fafafa;
+ }
+
+ #calculator {
+     /* calculator div location on main grid */
+     grid-column: 2;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     background-color: #fafafa;
+     justify-self: center;
+     padding: 50px;
+     border-radius: 25px;
+     box-shadow: #c9646a 0px 5px 5px;
+
+     /* creating nested grid within our grid for calculator element layout */
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-template-rows: auto auto auto auto auto auto;
+ }
+
+
+ #output {
+     /* answer div location within nested grid */
+     grid-column: 2;
+     grid-row-start: 1;
+     grid-row-end: 2;
+     background: #fafafa;
+     color: #383838;
+     border: #7d7d7d 1px solid;
+     border-radius: 10px;
+     width: 5em;
+     height: 1.8em;
+     box-shadow: inset #9d9c9c 0px 2px 2px;
+     justify-self: center;
+     text-align: end;
+     overflow-y: scroll;
+ }
+
+
+ #textbox1 {
+     /* answer div location within nested grid */
+     grid-column: 2;
+     grid-row-start: 3;
+     grid-row-end: 4;
+     margin: 5px;
+ }
+
+ #textbox2 {
+     /* answer div location within nested grid */
+     grid-column: 2;
+     grid-row-start: 4;
+     grid-row-end: 5;
+     margin: 5px;
+ }
+
+ #textbox3 {
+     /* answer div location within nested grid */
+     grid-column: 2;
+     grid-row-start: 5;
+     grid-row-end: 6;
+     margin: 5px;
+ }
+
+
+ ::placeholder {}
+
+ #button {
+     /* button location within nested grid */
+
+     grid-column: 2;
+     grid-row-start: 6;
+     grid-row-end: 7;
+
+     margin: 20px;
+     padding: 10px;
+     border: solid #c9646a;
+     border-radius: 10px;
+     background: #fafafa;
+     color: #d06c64;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     box-shadow: #c9646a 0px 5px 5px;
+     transition: all .2s;
+ }
+
+
+ #button:hover {
+     background: #ef9e9e;
+     color: #fafafa;
+     border: solid #ef9e9e;
+     box-shadow: #322828 0px 5px 5px;
+ }
