@@ -3,4 +3,5 @@
 
 Ya Cai & Alesia Cameron
 
-I am not sure why it added an additional HW2 folder within the repository 
+Professor- 
+I am not sure why it added an additional HW2 folder within the repository. I tried to delete but couldn't figure it out...
